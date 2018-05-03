@@ -1,0 +1,54 @@
+/*Page*/
+
+html {
+  font-family: "aktiv-grotesk",sans-serif;
+  font-size: 10px
+  }
+
+/*Navigation*/
+
+nav .container {
+  margin: 0px;
+}
+
+.navbar-brand img{
+  width: auto;
+  height: 50px;
+  padding: 0px
+
+}
+
+li {
+  padding: 16px;
+  font-size: 12px;
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+ height: 800px;
+ width: 100%;
+ background: url("./resources/Images/Splash-banner.png");
+ background-size: cover;
+ background-color: #222;
+ margin: 82px 0px;
+
+}
+
+.jumbotron img {
+  width: 220px;
+}
+
+.Jumbotron-Intro {
+  width: 300px;
+  font-size: 10px;
+}
+
+/* In style.css */
+.btn-primary {
+  background-color: green;
+}
+
+a {
+  letter-spacing: 5px;
+}
