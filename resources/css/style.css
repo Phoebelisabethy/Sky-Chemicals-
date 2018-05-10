@@ -1,152 +1,154 @@
 /* Universal Styles */
 
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 body {
-  font-family: "aktiv-grotesk", sans-serif;
-  line-height: 1.4;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.4;
 }
 
 h2 {
-  font-size: 1.7rem;
-  font-weight: 200;
-  color: #2a88bb;
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: #2a88bb;
 }
 
 h3 {
-  font-size: 1.3rem;
-  font-weight: 200;
+    font-size: 1.3rem;
+    font-weight: 200;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 /* Bootstrap Overrides */
 
 .navbar-light .navbar-nav > .active > a,
 .navbar-light .navbar-nav > .active > a:hover {
-  background-color: inherit;
+    background-color: inherit;
 }
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed; /* <-- Look here */
-  right: 0;
-  left: 0;
-  z-index: 1030;
+    position: sticky; /* <-- Look here */
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 .btn-primary {
-  width: 160px;
-  padding: 1.3rem 0;
-  border: 0;
-  margin-top: 2.8rem;
-  background-color: #399bd1;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  transition: .5s box-shadow;
+    width: 160px;
+    padding: 1.3rem 0;
+    border: 0;
+    margin-top: 2.8rem;
+    background-color: #399bd1;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    transition: .5s box-shadow;
 }
 
 .btn-primary:hover {
-  background-color: #399bd1;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+    background-color: #399bd1;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
 }
 
 .btn-primary:active {
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Slick Overrides */
 
 .slick-slide {
-  outline: none;
+    outline: none;
 }
 
 /* Navigation */
 
 .navbar img{
-  width: 90px;
+    width: 90px;
 }
 
 .navbar {
-  height: 70px;
-  border:0px;
-  margin:0px;
+    height: 70px;
+    border:0px;
+    margin:0px;
+    position:
 
 }
 
 a {
-  font-size: 0.8rem;
-  font-weight: 200;
-  letter-spacing: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 200;
+    letter-spacing: 0.4rem;
 
 }
 
 .navbar-nav {
-  margin-top: 0.6rem;
+    margin-top: 0.6rem;
 }
 
 
 /* Jumbotron */
 
 .jumbotron {
-  height: 48rem;
-  padding-top: 10rem;
-  text-align: left;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
+    height: 48rem;
+    padding-top: 10rem;
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
 .background-Intro {
-  background-image: url("../images/splash banner16 (lighter)_2.png")
+    background-image: url("../images/splash banner16 (lighter)_2.png")
 }
 .logo img {
-  width: 25rem;
-  margin: 10rem 0rem 0rem 37rem;
+    width: 25rem;
+    margin: 10rem 0rem 0rem 37rem;
 }
 
 .background-Intro2 {
-  background-image: url("../images/jumbotron-tablets.jpg");
-
+    background-image: url("../images/jumbotron-tablets.png");
+    background-size: cover;
 }
 .background-Intro2 h2 {
-  max-width: 20rem;
-  font-size: 3.8rem;
-  margin-left: 3rem;
-  font-weight: 800;
-  letter-spacing: 0.8rem;
-  line-height: 6rem;
-  color: inherit;
-  opacity: 0.6;
+    max-width: 20rem;
+    font-size: 3.8rem;
+    margin-left: 3rem;
+    font-weight: 800;
+    letter-spacing: 0.8rem;
+    line-height: 6rem;
+    color: inherit;
+    opacity: 0.6;
 }
 
 .background-Intro3 {
-  background-image: url("../images/jumbotron-container.png");
+    background-image: url("../images/jumbotron-container-long.png");
+    background-size: cover;
 }
 .background-Intro3 h2 {
-  font-size: 4rem;
-  max-width: 40rem;
-  margin: 7rem;
-  line-height: 5rem;
+    font-size: 5rem;
+    max-width: 55rem;
+    margin: 5.5rem;
+    line-height: 6.5rem;
 }
 
 
 
 .btn {
-  margin-top: 9rem;
-  border-bottom: 0.1rem solid currentColor;
-  padding: 0.7rem 0rem 0.7rem 0.4rem;
+    margin-top: 9rem;
+    border-bottom: 0.1rem solid currentColor;
+    padding: 0.7rem 0rem 0.7rem 0.4rem;
 }
 
 .relative-wrapper {
-  position: relative;
-  top: -16rem;
-  width: 100%;
-  text-align: center;
+    position: relative;
+    top: -16rem;
+    width: 100%;
+    text-align: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -179,93 +181,157 @@ a {
     background-size: cover;
     top: 3rem;
     margin-top: -14rem;
-  }
-
-.introduction {
-  max-height: 30rem;
-  max-width: 70rem;
-  color: #FFFFFF;
-  margin-top: 10rem;
-  padding: 2.5rem 0rem;
-  border-top: 0.1rem solid currentColor ;
-  border-bottom: 0.1rem solid currentColor ;
 }
 
-.introduction h2 {
-  color: #FFFFFF;
-  letter-spacing: 0.3rem;
-  font-size: 1rem;
-  font-weight: 300;
+.parallax-text {
+    max-height: 30rem;
+    max-width: 70rem;
+    color: #FFFFFF;
+    margin-top: 10rem;
+    padding: 2.5rem 0rem;
+    border-top: 0.1rem solid currentColor ;
+    border-bottom: 0.1rem solid currentColor ;
 }
 
+.parallax-text h2 {
+    color: #FFFFFF;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
 
-/* Project Image Containers */
+/* Pericide Story Image Containers */
 
 .image-container {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .image-container img {
-  opacity: 0.7;
-  transition: transform .5s,
+    opacity: 0.7;
+    transition: transform .5s,
               opacity .5s;
-  transition: transform .5s,
+    transition: transform .5s,
               opacity .5s;
 }
 
 .image-container img:hover {
-  opacity: 1;
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
+    opacity: 1;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
-/* Featured Project */
+/* Pericide Story */
 
 .pericide-story{
-  margin-top: 2rem; /* To account for relatively positioned button */
+    margin-top: 2rem; /* To account for relatively positioned button */
 }
 
 .featured-project .image-container {
-  height: 19rem;
-  margin-top: 20px; /* To match bootstrap header margins */
-}
-
-.categories h3 {
-  color: #399bd1;
-}
-
-.categories ul {
-  color: rgba(0, 0, 0, 0.7);
+    height: 19rem;
+    margin-top: 20px; /* To match bootstrap header margins */
 }
 
 /* Projects */
 
 .project {
-  margin-bottom: 5.85rem;
+    margin-bottom: 5.85rem;
 }
 
 .project .image-container {
-  height: 13.5rem;
-  overflow: hidden;
+    height: 13.5rem;
+    overflow: hidden;
 }
 
-/* Help */
+/* parallax-purple */
 
-.help {
-  padding: 5.2rem 0;
-  background-color: #f3f3f3;
-  text-align: center;
+.parallax-purple {
+    background-image: url("../images/purple-background.png");
+    height: 24rem;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 3rem;
+    margin-top: 2rem;
 }
 
-.help strong {
-  display: inline-block;
-  margin-bottom: 1.4rem;
-  font-size: 2.5rem;
-  font-weight: bold;
+.colour-purple-text h2 {
+    color: #FFFFFF;
+    margin: 4rem 0rem;
+    border: 0rem;
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    opacity: 0.8;
+    text-align: center;
 }
 
-.help p {
-  max-width: 42rem;
-  margin: auto;
+.colour-purple-text p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+
+
+}
+
+/* Colour activation diagram */
+
+ .colour-diagram {
+   height: 52rem;
+   margin-top: 6rem;
+   text-align: right;
+}
+
+.diagram-image {
+   width: 40rem;
+   margin-top: 4rem;
+}
+
+
+/* Colour Activation */
+
+.colour-activation {
+   padding: 5.2rem 0;
+   background-color: #FFFFFF;
+   text-align: left;
+}
+
+.colour-activation h2{
+   font-size: 2rem;
+   max-width: 70rem;
+   padding: 0rem 5rem 1rem 5rem;
+   color: #2a88bb;
+   line-height: normal;
+}
+
+.colour-activation p{
+   max-width: 70rem;
+   padding: 0rem 5rem 0rem 5rem;
+   color: #2a88bb;
+}
+
+
+hr {
+   width: 4rem;
+   height: 0.1rem;
+   background-color: #2a88bb;
+   margin-left: 6.2rem;
+
+}
+
+
+/* Colour image */
+
+.parallax-image {
+   background-image: url("../images/back.jpg");
+   height: 28rem;
+   width: 100%;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   top: 3rem;
+   margin-top: 2rem;
 }
