@@ -12,6 +12,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="resources/slick/slick.css"/>
 
   <link rel="stylesheet" type="text/css" href="resources/slick/slick-theme.css"/>
@@ -22,16 +23,17 @@
 </head>
 
 <body>
+
   <!-- Navigation -->
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" style="background-color: #FFFFFF;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background-color: #FFFFFF;">
     <a class="navbar-brand" href="#"><img src="./resources/Images/Logo small.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#about">ABOUT <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
@@ -48,7 +50,7 @@
   </nav>
 
   <!-- Jumbotron -->
-  <div class="carousel">
+  <div class="carousel top">
     <div class="jumbotron background-Intro">
       <div class="container-fluid">
         <h1 class="logo"><img src="./resources/Images/logo big x2.png" class="img-responsive"></h1>
@@ -66,19 +68,21 @@
     </div>
 
   </div>
-  <div class="relative-wrapper">
+  <div class="relative-wrapper top">
     <a href="#about" class="btn btn-light btn-sm cta">MORE INFORMATION</a>
   </div>
 
 <!-- About Peracide -->
-  <div class="parallax">
-    <span id="about" class="anchor"></span>
+  <div class="parallax container-fluid">
+    <span id="about" class="about"></span>
     <div class="container parallax-text">
-      <div class="row introduction">
-        <h2 class="col-xs-12">ABOUT PERICIDE</h2>
-        <p class="col-xs-12">Pericide is a safe and user friendly disinfectant. To ensure product usability and acceptability we have formulated Peracide with the user in mind. Unlike many other disinfectants Peracide does not irritate the skin and does not produce harmful vapors even at high concentrations.<br>
+      <div class="row">
+        <h2 class="col">ABOUT PERICIDE</h2>
+      </div>
+      <div class="row">
+        <p class="col">Pericide is a safe and user friendly disinfectant. To ensure product usability and acceptability we have formulated Peracide with the user in mind. Unlike many other disinfectants Peracide does not irritate the skin and does not produce harmful vapors even at high concentrations.<br>
         </br>Peracide has no exposure limit, meaning the cleaning staff are able to use it throughout the day. Peracide has a lasting apple fragrance.<br>
-      </br>Peracide is formulated with excellent cleaning properties and is suitable for use on a variety of surfaces such as toilets and toilet seats, floors, doors and door handles, nurse call buttons, beds and bed rails, keyboards, etc.</p>
+        </br>Peracide is formulated with excellent cleaning properties and is suitable for use on a variety of surfaces such as toilets and toilet seats, floors, doors and door handles, nurse call buttons, beds and bed rails, keyboards, etc.</p>
       </div>
     </div>
   </div>
@@ -86,15 +90,15 @@
 <!-- Pericide story -->
   <div class="container title">
     <div class="row">
-      <h2 class="col-xs-12">The Story of Peracide</h2>
+      <h2 class="col">The Story of Peracide</h2>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-6">
+      <div class="col">
         <div class="image-container">
-          <a href="#"><img src="resources/images/featured-project.png"></a>
+          <img src="resources/images/featured-project.png"></a>
         </div>
       </div>
-      <div class="col-xs-6 col-md-6">
+      <div class="col">
        <h3>The Appliance of Science</h3>
        <p>In 2005 Michael Joseph, managing director of Sky Chemicals, first became interested in hospital infection control. Reports at the time were full of news of outbreaks of Clostridium Difficile (C-Diff), Noro Virus, Ecoli, and MRSA, branded super bugs which were causing increased hospital deaths, extended stays and temporary ward closures. So he began his quest to find a reliable, effective and environmentally sound way to control these harmful pathogens</p>
        <p>With the help of highly experienced chemists from the industry, their research soon led them to take a closer look at peracitic acid.
@@ -107,26 +111,26 @@
   <!-- Story features -->
   <div class="container">
     <div class="row">
-      <h2 class="col-xs-12">The Process</h2>
+      <h2 class="col">The Process</h2>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-4 project">
+      <div class="col project">
         <div class="image-container">
-          <a href="#"><img src="resources/images/project1.png"></a>
+          <img src="resources/images/project1.png"></a>
         </div>
         <h3>The First Hurdle</h3>
         <p>Using a precursor they were able to produce peracitic acid in powder form that was highly stable, produced no irritating odours or fumes, had a PH of 9 and was safe, clean and easy to use. Moreover it was extremely environmentally friendly as it biodegrades swiftly into, vinegar, water and carbon.</p>
       </div>
-      <div class="col-xs-12 col-sm-4 project">
+      <div class="col project">
         <div class="image-container">
-          <a href="#"><img src="resources/images/project2.png"></a>
+          <img src="resources/images/project2.png"></a>
         </div>
         <h3>In House</h3>
         <p>Professor Peter Wilson a microbiologist at University College London, showed a keen interest in the further development of the idea.  Around this time though, the continued costs of development were placing a strain on the company, so the whole process was moved in-house, creating a makeshift lab at Sky Chemicals, and reconfiguring an old knife and fork press to produce their first peracitic acid tablets, and thus the first generation of Peracide in Situ was born</p>
       </div>
-      <div class="col-xs-12 col-sm-4 project">
+      <div class="col project">
         <div class="image-container">
-          <a href="#"><img src="resources/images/project3.png"></a>
+          <img src="resources/images/project3.png"></a>
         </div>
         <h3>Trials</h3>
         <p>Once Michael and his team were satisfied that they could reliably produce Peracide tablets to a consistent formula, it was time for the first full-scale laboratory tests. Not only did Peracide prove a powerful disinfectant, effective against all super bugs, and especially C-Diff, it also displayed another huge advantage over chlorine based products.</p>
@@ -141,9 +145,14 @@
   <div class="parallax-purple">
     <div class="container colour-purple-text">
       <div class="row">
-        <h2 class="col-xs-12">THE COLOUR PURPLE</h2>
-        <p class="col-xs-12">Something Michael observed during the ward trials was a lack of understanding of ratios, leading to dilutions which were either too weak to be effective, or stronger than necessary, which was wasteful. It was this observation that led to another of his light bulb moments; the idea of using a foolproof colour system which would clearly indicate to the user when the correct parts per million (ppm) had been achieved.</p>
-        <p class="col-xs-12">Now, when a user has added the right amount of tablets to warm water, the solution will go purple in about 5 mins. At the correct ppm Peracide remains effective for around 24 hrs after which it will become transparent once more, indicating that it is no longer effective. At a stroke the colour system transformed the art of hospital cleaning into a science.</p>
+        <h2 class="col">THE COLOUR PURPLE</h2>
+      </div>
+      <hr id='white-line'>
+      <div class="row">
+        <p class="col">Something Michael observed during the ward trials was a lack of understanding of ratios, leading to dilutions which were either too weak to be effective, or stronger than necessary, which was wasteful. It was this observation that led to another of his light bulb moments; the idea of using a foolproof colour system which would clearly indicate to the user when the correct parts per million (ppm) had been achieved.</p>
+      </div>
+      <div class="row">
+          <p class="col">Now, when a user has added the right amount of tablets to warm water, the solution will go purple in about 5 mins. At the correct ppm Peracide remains effective for around 24 hrs after which it will become transparent once more, indicating that it is no longer effective. At a stroke the colour system transformed the art of hospital cleaning into a science.</p>
       </div>
     </div>
   </div>
@@ -163,21 +172,25 @@
     </div>
    </div>
    <div class="row">
-     <div class="col-xs-12">
+     <div class="col">
        <h2>What Are The Benefits Of The Colour Activation System?</h2>
      </div>
+   </div>
+   <div class="row">
      <hr />
-     <div class="col-xs-12">
-       <p>Peracide comes with an incorporated colour activation system designed to help and alert the user of the readiness of the Peracide working solution.</p>
-       <p>The solution goes through 4 stages. To ensure the correct dosage is achieved in every use, we have implemented explicit dilution instructions whereby accuracy and consistency are always met.</p>
+  </div>
+  <div class="row">
+   <div class="col">
+     <p>Peracide comes with an incorporated colour activation system designed to help and alert the user of the readiness of the Peracide working solution.</p>
+     <p>The solution goes through 4 stages. To ensure the correct dosage is achieved in every use, we have implemented explicit dilution instructions whereby accuracy and consistency are always met.</p>
      </div>
   </div>
-</div>
+  </div>
 
 
 
 
-  <!-- Colour Image -->
+  <!-- Colour-Image -->
   <div class="parallax-image">
     <div class="row">
       <h2 class="col-xs-12"></h2>
@@ -185,15 +198,20 @@
   </div>
 
 <!-- carousel-application -->
+<div class="container-fluid divider-application">
+  <div class="container application">
+    <div class="row title">
+      <h2 class="col">APPLICATION</h2>
+    </div>
+  </div>
+</div>
+
 
 <div class="container">
-  <div class="row title">
-    <h2 class="col-xs-12 col-sm-6">Application</h2>
-  </div>
-<div class="card-deck your-class">
-  <div class="card">
-    <img class="card-img-top" src="resources/images/Application_photos/Hospital.png" alt="Card image cap">
-    <div class="card-body">
+  <div class="card-deck your-class container">
+    <div class="card">
+      <img class="card-img-top" src="resources/images/Application_photos/Hospital.png" alt="Card image cap">
+      <div class="card-body">
       <h5 class="card-title">Hospital</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action..</p>
     </div>
@@ -254,9 +272,53 @@
 </div>
 </div>
 
-<!--Only works with bootstrap version 4-->
+<div class="container-fluid divider">
+</div>
 
 
+
+<!-- Why do we need peracitic acid? -->
+
+<div class="parallax-Hospital">
+  <span id="technology" class="technology"></span>
+  <div class="container parallax-text-hopsital">
+    <div class="row">
+      <div class="col">
+        <h2>WHY DO WE NEED PERACETIC ACID?</h2>
+      </div>
+    </div>
+  <div class="row">
+    <hr />
+  </div>
+  <div class="row">
+    <div class="col">
+     <p>...</p>
+    </div>
+  </div>
+ </div>
+</div>
+
+<div class="container-fluid why-better">
+  <div class="container parallax-text-hopsital">
+    <div class="row">
+      <div class="col">
+        <h2>WHY IS PERACETIC ACID BETTER?</h2>
+      </div>
+    </div>
+  <div class="row">
+    <hr />
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+     <p>Other chemicals can be dangerous and ineffective, causing problems to peoples health and the enviroment</p>
+     <p>As a greater oxidizer than chlorine, Chlorine Dioxide, NaDcc tablets and Hydrogen Peroxide it is an ideal product to combat HCAI boasting a wide spectrum activity on spores, viruses, bacteria, fungi and yeast.</p>
+     <p>Peracide can be used in a multitude of situations on any non-porous surface - even in the presence of organic matter, unlike chlorine and quaternary ammoniums</p>
+    </div>
+  </div>
+ </div>
+</div>
+
+</div>
 
 
 

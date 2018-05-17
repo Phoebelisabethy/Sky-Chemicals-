@@ -24,6 +24,12 @@ img {
     width: 100%;
 }
 
+.divider {
+  background-color: #399bd1;
+  height: 7rem;
+  margin-top: 5rem;
+}
+
 /* Bootstrap Overrides */
 
 .navbar-light .navbar-nav > .active > a,
@@ -33,7 +39,6 @@ img {
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-    position: sticky; /* <-- Look here */
     right: 0;
     left: 0;
     z-index: 1030;
@@ -47,6 +52,7 @@ img {
     background-color: #399bd1;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     transition: .5s box-shadow;
+
 }
 
 .btn-primary:hover {
@@ -72,7 +78,7 @@ img {
 }
 
 .navbar {
-    height: 70px;
+    height: 5rem;
     border:0px;
     margin:0px;
     background-color: #FFFFFF;
@@ -91,16 +97,28 @@ a {
 
 /* Dummy anchors */
 
-.anchor {
+.about {
     display: block;
     position: absolute;
     width: 0;
     height: 0;
     z-index: -1;
-    top: 49rem;
+    top: 50rem;
     left: 0;
     visibility: hidden;
 }
+
+.technology {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: 332rem;
+    left: 0;
+    visibility: hidden;
+}
+
 
 /* Jumbotron */
 
@@ -140,11 +158,12 @@ a {
 .background-Intro3 {
     background-image: url("../images/jumbotron-container-long.png");
     background-size: cover;
+    background-position: right;
 }
 .background-Intro3 h2 {
     font-size: 5rem;
     max-width: 55rem;
-    margin: 5.5rem;
+    margin-left: 3rem;
     line-height: 6.5rem;
 }
 
@@ -152,7 +171,7 @@ a {
 
 .btn {
     margin-top: 9rem;
-    padding: 0.7rem 0rem 0.7rem 0.4rem;
+    padding: 0.7rem 0.7rem 0.7rem 1rem;
 }
 
 .relative-wrapper {
@@ -163,15 +182,25 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
-  .jumbotron h1 {
-    font-size: 5.7rem;
+  .background-Intro2 h2{
+    font-size: 2.5rem;
+    margin-left: 2.5rem;
   }
+  .background-Intro3 h2 {
+    font-size: 2.5rem;
+    max-width: 30rem;
+    margin: 2rem;
+    line-height: 4rem;
+}
+   .logo img {
+    width: 15rem;
+   margin: 10rem 0rem 0rem 5rem;
+}
+
 }
 
 @media only screen and (max-width: 550px) {
-  .jumbotron h1 {
-    font-size: 4rem;
-  }
+
   .logo img {
     width: 15rem;
     float: left;
@@ -192,6 +221,8 @@ a {
     background-size: cover;
     top: 3rem;
     margin-top: -13.8rem;
+    align-items: center;
+    padding: 11rem 2rem;
 }
 
 .parallax-text {
@@ -201,14 +232,15 @@ a {
     padding: 2.5rem 0rem;
     border-top: 0.1rem solid currentColor ;
     border-bottom: 0.1rem solid currentColor;
-}
+  }
 
 .parallax-text h2 {
     color: #FFFFFF;
     letter-spacing: 0.3rem;
     font-size: 1rem;
-    font-weight: 300;
+
 }
+
 
 /* Pericide Story Image Containers */
 
@@ -217,6 +249,7 @@ a {
 }
 
 .image-container img {
+    background-position: left;
     opacity: 0.7;
     transition: transform .5s,
               opacity .5s;
@@ -234,7 +267,8 @@ a {
 /* Pericide Story */
 
 .title {
-    margin-top: 2rem; /* To account for relatively positioned button */
+    margin-top: 3rem; /* To account for relatively positioned button */
+    margin-bottom: 1rem;
 }
 
 .featured-project .image-container {
@@ -249,8 +283,12 @@ a {
 }
 
 .project .image-container {
-    height: 13.5rem;
+    height: 14rem;
+    background-size: cover;
     overflow: hidden;
+    margin-bottom: 1rem;
+
+
 }
 
 /* parallax-purple */
@@ -269,7 +307,7 @@ a {
 
 .colour-purple-text h2 {
     color: #FFFFFF;
-    margin: 4rem 0rem;
+    margin: 4rem 2rem 2rem 2rem;
     border: 0rem;
     letter-spacing: 0.5rem;
     font-size: 2.5rem;
@@ -282,8 +320,13 @@ a {
     color: #FFFFFF;
     text-align: center;
     font-size: 1rem;
+}
 
-
+#white-line {
+  width: 3rem;
+  height: 0.02rem;
+  background-color: #FFFFFF;
+  text-align:center; margin: 0rem auto 2rem auto;
 }
 
 /* Colour activation diagram */
@@ -324,10 +367,13 @@ a {
 
 
 hr {
-   width: 4rem;
-   height: 0.1rem;
+   width: 3rem;
+   height: 0.05rem;
    background-color: #2a88bb;
    margin-left: 1.2rem;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+
 
 }
 
@@ -336,7 +382,7 @@ hr {
 
 .parallax-image {
     background-image: url("../images/back.jpg");
-    height: 28rem;
+    height: 20rem;
     width:100%;
     background-attachment: fixed;
     background-position: center;
@@ -344,11 +390,23 @@ hr {
     background-size: cover;
     top: 3rem;
     margin-top: 2rem;
+
 }
 
 /* carousel-application */
-.application {
-  justify-content: space-around;
+
+.divider-application {
+  background-color: #399bd1;
+  height: 7rem;
+  margin-bottom: 5rem;
+
+}
+
+.application h2{
+  padding-top: 4rem;
+  color: #FFFFFF;
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
 }
 .application-card {
   text-align: left;
@@ -369,4 +427,43 @@ hr {
   @include media-breakpoint-only(xl) {
     column-count: 5;
   }
+}
+
+/*parallax-hospital*/
+
+.parallax-Hospital {
+    background-image: url("../images/blur-hospital.png");
+
+
+    height: 40rem;
+    width:100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 3rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.parallax-text-hopsital {
+    max-height: 30rem;
+    max-width: 70rem;
+    color:  #2a88bb;
+    padding: 2.5rem 0rem;
+
+  }
+
+.parallax-text-hopsital h2 {
+    color:  #2a88bb;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.why-better {
+  height: 23rem;
 }

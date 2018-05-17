@@ -16,7 +16,7 @@ $('a').click(function(){
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 1100);
     return false;
-});
+  });
 
 $('.your-class').slick({
          infinite: true,
@@ -25,6 +25,12 @@ $('.your-class').slick({
          arrows: true,
          dots: true,
 
-    });
+  });
+
+    $(window).scroll(function(){
+    $(".top").css("opacity", 1 - $(window).scrollTop() / 500);
+  });
+
+
 
 });
