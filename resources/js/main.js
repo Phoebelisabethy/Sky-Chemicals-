@@ -31,6 +31,14 @@ $('.your-class').slick({
     $(".top").css("opacity", 1 - $(window).scrollTop() / 500);
   });
 
+  $('.fade').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
+
 
 
 });
