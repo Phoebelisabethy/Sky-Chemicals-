@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $('.carousel').slick({
     slidesToScroll: 1,
     autoplay: true,
@@ -26,6 +27,19 @@ $('.your-class').slick({
          dots: true,
 
   });
+
+
+  $('.your-class-fullwidth').slick({
+           infinite: true,
+           slidesToShow: 1,
+           slidesToScroll: 1,
+           arrows: true,
+           dots: true,
+
+    });
+
+
+
 
     $(window).scroll(function(){
     $(".top").css("opacity", 1 - $(window).scrollTop() / 500);

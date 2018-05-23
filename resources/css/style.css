@@ -78,7 +78,6 @@ img {
 }
 
 .navbar {
-    height: 5rem;
     border:0px;
     margin:0px;
     background-color: #FFFFFF;
@@ -119,6 +118,17 @@ a {
     visibility: hidden;
 }
 
+.technical-data {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: 462rem;
+    left: 0;
+    visibility: hidden;
+}
+
 
 /* Jumbotron */
 
@@ -148,11 +158,11 @@ a {
     max-width: 20rem;
     font-size: 3.8rem;
     margin-left: 3rem;
-    font-weight: 800;
     letter-spacing: 0.8rem;
     line-height: 6rem;
     color: inherit;
     opacity: 0.6;
+    font-weight: bold;
 }
 
 .background-Intro3 {
@@ -338,30 +348,21 @@ a {
 }
 
 .diagram-image {
-   width: 40rem;
+   width: 37rem;
    margin-top: 4rem;
 }
 
+#animation {
+  padding-bottom: 20rem;
+}
 
 /* Colour Activation */
 
 .colour-activation {
-   padding: 5.2rem 0;
-   background-color: #FFFFFF;
-   text-align: left;
-}
-
-.colour-activation h2{
-   font-size: 2rem;
-   max-width: 70rem;
-   padding: 0rem 5rem 1rem 5rem;
-   color: #2a88bb;
-   line-height: normal;
+  margin-top: 5rem;
 }
 
 .colour-activation p{
-   max-width: 70rem;
-   padding: 0rem 5rem 0rem 5rem;
    color: #2a88bb;
 }
 
@@ -415,7 +416,8 @@ hr {
 }
 
 .slick-prev:before, .slick-next:before {
-    color:#2a88bb;
+    color: #505050;
+    opacity: 0.6;
 }
 
 /*bootstrap*/
@@ -466,4 +468,140 @@ hr {
 
 .why-better {
   height: 23rem;
+}
+
+/*carousel-arrows-inside*/
+
+.your-class-fullwidth .slick-prev {
+  left: 2rem;
+  color: #cccccc;
+  z-index: 1;
+}
+.your-class-fullwidth .slick-next {
+  right: 2rem;
+  color: #cccccc;
+}
+
+/*carousel-arrows-outside*/
+
+.slick-prev {
+  left: -1rem;
+  color: #cccccc;
+}
+.slick-next {
+  right: -1rem;
+  color: #cccccc;
+}
+
+
+
+
+/*carousel-why-peracide*/
+
+.your-class-fullwidth {
+  margin-top: 4rem;
+}
+
+.col-image img {
+  max-width: 50rem;
+}
+
+#background-why {
+  background-image: url("../images/carousel-background-water.png");
+}
+
+#background-why-2 {
+  background-image: url("../images/carousel-forest.png");
+  color: #2d2766;
+
+}
+
+
+#background-why-3 {
+  background-image: url("../images/carousel-green-plant.png");
+}
+
+#left-line {
+  width: 3rem;
+  height: 0.05rem;
+  background-color: #2d2766;
+  text-align:left;
+  margin-left: 0rem;
+}
+
+#white-left-line {
+  width: 3rem;
+  height: 0.05rem;
+  background-color: #FFFFFF;
+  text-align:left;
+  margin-left: 0rem;
+}
+
+/*continuouse-scroll*/
+
+.banner img {
+  width: 12rem;
+  padding: 2rem;
+
+}
+
+.banner > div {
+
+   transition: opacity 0.5s ease-out;
+   animation: moveSlideshow 60s linear infinite;
+}
+
+/*trading details*/
+
+.trading-details {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.trading-details-text{
+  color: black;
+  line-height: 2rem;
+  letter-spacing: 0.3rem;
+  font-size: 1.5rem;
+}
+
+.trading-details-text p {
+  font-size: 0.8rem;
+}
+
+.border-text{
+  padding: 2.5rem 0rem;
+  border-top: 0.1rem solid currentColor ;
+  border-bottom: 0.1rem solid currentColor;
+}
+
+ul {
+    list-style: square inside url("sqpurple.gif");
+    color: black;
+}
+
+/*what-is-to-come*/
+
+.what-is-to-come h2{
+  color: #2e2766;
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.card-link img{
+  height: 4rem;
+  width: 6rem;
+  padding:0rem;
+}
+
+.card-body {
+  height: 10rem;
+}
+
+#card-links {
+  margin: 0rem;
+  letter-spacing: normal;
+  font-size: 1rem;
 }
