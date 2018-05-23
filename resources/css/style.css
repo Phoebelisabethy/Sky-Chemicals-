@@ -129,6 +129,17 @@ a {
     visibility: hidden;
 }
 
+.contact {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: 619rem;
+    left: 0;
+    visibility: hidden;
+}
+
 
 /* Jumbotron */
 
@@ -474,23 +485,23 @@ hr {
 
 .your-class-fullwidth .slick-prev {
   left: 2rem;
-  color: #cccccc;
+  color: #2a88bb;
   z-index: 1;
 }
 .your-class-fullwidth .slick-next {
   right: 2rem;
-  color: #cccccc;
+  color: #2a88bb;
 }
 
 /*carousel-arrows-outside*/
 
 .slick-prev {
   left: -1rem;
-  color: #cccccc;
+  color: #2a88bb;
 }
 .slick-next {
   right: -1rem;
-  color: #cccccc;
+  color: #2a88bb;
 }
 
 
@@ -582,12 +593,25 @@ ul {
 
 /*what-is-to-come*/
 
-.what-is-to-come h2{
+.card-header {
+  background-color: #FFFFFF;
+}
+
+.card-header h2{
   color: #2e2766;
   letter-spacing: 0.3rem;
   font-size: 1rem;
   font-weight: 500;
   padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.card-deck h4{
+  color: #2e2766;
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+
 }
 
 .card-link img{
@@ -604,4 +628,225 @@ ul {
   margin: 0rem;
   letter-spacing: normal;
   font-size: 1rem;
+}
+
+/*testimonial*/
+
+.testimonial {
+  margin-bottom: 2rem;
+}
+
+
+/*Newsfeed*/
+
+.latest-news > h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.latest-news-all {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.latest-news-left {
+    display: inline-block;
+    float: left;
+    padding-right: 20px;
+}
+.latest-news-right > p {
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+.news span.news-left {
+    padding-right: 18px;
+}
+
+.news span {
+    color: #333;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+/* Form */
+
+.form {
+  background-color: #2a88bb;
+  width: 100%;
+  padding: 3rem 0rem;
+}
+
+.form h1 {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.ccform {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.ccfield-prepend {
+    margin-bottom: 10px;
+    width: 100%;
+    margin: 1em auto;
+}
+
+.ccform-addon {
+    color: #f8ae45;
+    float: left;
+    padding: 8px;
+    width: 8%;
+    background: #FFFFFF;
+    text-align: center;
+    margin: 1em auto;
+}
+
+.ccformfield {
+    color: #000000;
+    background: #FFFFFF;
+    border: none;
+    padding: 15.5px;
+    width: 91.9%;
+    display: block;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 14px;
+    margin: 2em auto;
+}
+
+.ccformfield {
+    font-family: 'Lato', Arial, sans-serif;
+    margin: auto;
+}
+
+.ccbtn {
+    display: block;
+    background: #483381;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 25px;
+    text-decoration: none;
+    border: 0;
+    -webkit-border-radius: 7;
+    -moz-border-radius: 7;
+    border-radius: 7px;
+    font-family: Quicksand;
+    font-weight: 400;
+    margin: auto;
+}
+
+.ccbtn:hover {
+    background: #ee2b60;
+
+}
+
+.credit {
+    width: 800px;
+    clear: both;
+    margin: 0 auto;
+    line-height: 25px;
+    padding: 25px 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.credit a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+
+.black-footer {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    text-align: left;
+    width: 100%;
+    min-width: 768px;
+    padding: 4% 4%;
+}
+
+.foot-centre img {
+  color: #FFFFFF;
+  width: 1rem;
+  padding-top: 0.8rem;
+}
+
+.foot-nav {
+    color: #ffffff;
+    margin: 0rem;
+    padding-top: 1rem;
+}
+
+.foot-nav a {
+    display: inline-block;
+    line-height: 1.8em;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0rem;
+}
+
+.foot-under-nav {
+  color: #ffffff;
+  margin: 0rem;
+  padding-top: 1rem;
+  opacity: 0.3;
+}
+
+.foot-centre a {
+  margin:0rem;
+}
+
+
+.foot-centre p {
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+    line-height: 2.7rem;
+
+}
+
+#about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+#about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.foot-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 1rem 1rem 0rem 0rem;
+
 }
