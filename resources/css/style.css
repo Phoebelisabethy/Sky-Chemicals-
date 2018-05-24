@@ -394,36 +394,37 @@ hr {
 
 .parallax-image {
     background-image: url("../images/back.jpg");
-    height: 20rem;
+    height: 14rem;
     width:100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    top: 3rem;
     margin-top: 2rem;
 
 }
 
 /* carousel-application */
 
-.divider-application {
-  background-color: #399bd1;
-  height: 7rem;
-  margin-bottom: 5rem;
-
+.application {
+  background-color: #F8F8FF;
+  height: 42rem;
 }
 
-.application h2{
-  padding-top: 4rem;
-  color: #FFFFFF;
+.application-title h2{
+  color: #505050;
   letter-spacing: 0.3rem;
   font-size: 1rem;
+  font-weight: 400;
 }
 .application-card {
   text-align: left;
   height: 15rem;
   border: 0.1rem solid #2a88bb;
+}
+
+.application .card-deck {
+  padding: 2rem 0rem;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -771,6 +772,33 @@ ul {
 }
 
 
+
+
+
+/* Subscribe */
+
+.intro-header {
+	color: #f8f8f8;
+  background-color:#00bfff;
+	text-align: center;
+  width:100%;
+  height:19rem;
+}
+
+.subscribe-panel {
+  padding-top: 2.5rem;
+}
+
+.mc-field-group img{
+  height: 2rem;
+  width: 3rem;
+}
+
+.btn-warning {
+  margin-top: 2rem;
+
+}
+
 /* Footer */
 
 
@@ -779,8 +807,7 @@ ul {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     text-align: left;
     width: 100%;
-    min-width: 768px;
-    padding: 4% 4%;
+    padding: 2rem 2rem;
 }
 
 .foot-centre img {
@@ -849,4 +876,29 @@ ul {
     color: #ffffff;
     margin: 1rem 1rem 0rem 0rem;
 
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
+.footer {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
 }
