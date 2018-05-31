@@ -7,6 +7,11 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     line-height: 1.4;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -29,6 +34,40 @@ img {
   height: 7rem;
   margin-top: 5rem;
 }
+
+h4 {
+  line-height: 1.5rem;
+}
+
+
+@media only screen and (max-width: 576px) {
+   .container {
+         display: flex;
+         display: -webkit-flex;
+         flex-direction: column;
+         -webkit-flex-direction: column;
+         height: 100%;
+  }
+
+    p {
+      font-size: 0.8rem;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media only screen and (max-width: 768px) {
+  p {
+  font-size: 0.8rem;
+ }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media only screen and (min-width: 992px) { ... }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media only screen and (min-width: 1200px) { ... }
+
+
 
 /* Bootstrap Overrides */
 
@@ -113,7 +152,7 @@ a {
     width: 0;
     height: 0;
     z-index: -1;
-    top: 333rem;
+    top: 307rem;
     left: 0;
     visibility: hidden;
 }
@@ -124,7 +163,7 @@ a {
     width: 0;
     height: 0;
     z-index: -1;
-    top: 462rem;
+    top: 448rem;
     left: 0;
     visibility: hidden;
 }
@@ -135,7 +174,7 @@ a {
     width: 0;
     height: 0;
     z-index: -1;
-    top: 619rem;
+    top: 542rem;
     left: 0;
     visibility: hidden;
 }
@@ -154,11 +193,11 @@ a {
 }
 
 .background-Intro {
-    background-image: url("../images/splash banner16 (lighter)_2.png")
+    background-image: url("../images/splash_banner16_(lighter)_2.png")
 }
-.logo img {
+.background-Intro img {
     width: 25rem;
-    margin: 10rem 0rem 0rem 37rem;
+    margin: 10rem 0rem 0rem 15rem;
 }
 
 .background-Intro2 {
@@ -188,8 +227,6 @@ a {
     line-height: 6.5rem;
 }
 
-
-
 .btn {
     margin-top: 9rem;
     padding: 0.7rem 0.7rem 0.7rem 1rem;
@@ -202,7 +239,7 @@ a {
     text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .background-Intro2 h2{
     font-size: 2.5rem;
     margin-left: 2.5rem;
@@ -213,19 +250,21 @@ a {
     margin: 2rem;
     line-height: 4rem;
 }
-   .logo img {
-    width: 15rem;
-   margin: 10rem 0rem 0rem 5rem;
+.background-Intro img {
+    width: 20rem;
+    margin: 10rem 0rem 0rem 4rem;
+}
 }
 
-}
+@media only screen and (max-width: 576px) {
 
-@media only screen and (max-width: 550px) {
-
-  .logo img {
-    width: 15rem;
-    float: left;
+  .background-Intro img {
+      width: 18rem;
+      margin: 10rem 2rem 0rem 0rem;
   }
+  .background-Intro3 h2 {
+    max-width: 10rem;
+ }
 }
 
 /* About Peracide */
@@ -233,7 +272,7 @@ a {
 .parallax {
     background-image: url("../images/Broken_tablet_background.png");
 
-    height: 40rem;
+    height: 47rem;
     width:100%;
 
     background-attachment: fixed;
@@ -261,6 +300,23 @@ a {
     font-size: 1rem;
 
 }
+
+.parallax img {
+  height: 4.5rem;
+  margin-top: 4rem;
+}
+.icon {
+  margin-right: 0rem;
+  align-items: center;
+}
+.icon p {
+  color: #FFFFFF;
+  letter-spacing: 0.3rem;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
 
 
 /* Pericide Story Image Containers */
@@ -294,7 +350,7 @@ a {
 
 .featured-project .image-container {
     height: 19rem;
-    margin-top: 20px; /* To match bootstrap header margins */
+    margin-top: 20px;
 }
 
 /* Projects */
@@ -309,14 +365,15 @@ a {
     overflow: hidden;
     margin-bottom: 1rem;
 
-
 }
+
+
 
 /* parallax-purple */
 
 .parallax-purple {
     background-image: url("../images/purple-background.png");
-    height: 24rem;
+    height: 40rem;
     width:100%;
     background-attachment: fixed;
     background-position: center;
@@ -340,14 +397,54 @@ a {
 .colour-purple-text p {
     color: #FFFFFF;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+
+.list-text {
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+li {
+    padding: 0.3rem;
+}
+
+ol {
+    list-style-type: decimal;
+    color: #2e2766;
+    list-style:
 }
 
 #white-line {
   width: 3rem;
   height: 0.02rem;
   background-color: #FFFFFF;
-  text-align:center; margin: 0rem auto 2rem auto;
+  text-align:left;
+  margin: 1rem auto 3rem auto;
+}
+
+@media only screen and (max-width: 576px) {
+  .colour-purple-text p {
+      font-size: 0.8rem;
+  }
+  .parallax-purple {
+      height: 44rem;
+  }
+  li {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen (max-width: 768px) {
+
+}
+
+#purple-line {
+  width: 3rem;
+  height: 0.02rem;
+  background-color: #2e2766;
+  text-align:left;
+  margin: 0.9rem 0rem 2rem 1rem;
 }
 
 /* Colour activation diagram */
@@ -367,48 +464,27 @@ a {
   padding-bottom: 20rem;
 }
 
-/* Colour Activation */
-
-.colour-activation {
-  margin-top: 5rem;
+@media only screen and (max-width: 576px) {
+  .diagram-image {
+     width: 26rem;
+     margin-top: 4rem;
+  }
+  #animation {
+    padding-bottom: 0rem;
+  }
 }
-
-.colour-activation p{
-   color: #2a88bb;
-}
-
-
-hr {
-   width: 3rem;
-   height: 0.05rem;
-   background-color: #2a88bb;
-   margin-left: 1.2rem;
-   margin-top: 2rem;
-   margin-bottom: 2rem;
-
-
-}
-
-
-/* Colour image */
-
-.parallax-image {
-    background-image: url("../images/back.jpg");
-    height: 14rem;
-    width:100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 2rem;
-
+@media only screen and (max-width: 768px) {
+  .diagram-image {
+     width: 29rem;
+     margin-top: 4rem;
+  }
 }
 
 /* carousel-application */
 
 .application {
   background-color: #F8F8FF;
-  height: 42rem;
+  height: 45rem;
 }
 
 .application-title h2{
@@ -419,10 +495,13 @@ hr {
 }
 .application-card {
   text-align: left;
-  height: 15rem;
+  height: 20rem;
   border: 0.1rem solid #2a88bb;
 }
 
+#card-application {
+  height: 38rem;
+}
 .application .card-deck {
   padding: 2rem 0rem;
 }
@@ -442,6 +521,8 @@ hr {
     column-count: 5;
   }
 }
+
+
 
 /*parallax-hospital*/
 
@@ -465,13 +546,13 @@ hr {
 .parallax-text-hopsital {
     max-height: 30rem;
     max-width: 70rem;
-    color:  #2a88bb;
+    color:  #2e2766;
     padding: 2.5rem 0rem;
 
   }
 
 .parallax-text-hopsital h2 {
-    color:  #2a88bb;
+    color:  #2e2766;
     letter-spacing: 0.3rem;
     font-size: 1rem;
     font-weight: 500;
@@ -481,6 +562,7 @@ hr {
 .why-better {
   height: 23rem;
 }
+
 
 /*carousel-arrows-inside*/
 
@@ -505,9 +587,6 @@ hr {
   color: #2a88bb;
 }
 
-
-
-
 /*carousel-why-peracide*/
 
 .your-class-fullwidth {
@@ -520,18 +599,18 @@ hr {
 
 #background-why {
   background-image: url("../images/carousel-background-water.png");
+  color: 	#2d2766;
 }
 
 #background-why-2 {
   background-image: url("../images/carousel-forest.png");
   color: #2d2766;
-
 }
-
 
 #background-why-3 {
   background-image: url("../images/carousel-green-plant.png");
 }
+
 
 #left-line {
   width: 3rem;
@@ -549,24 +628,141 @@ hr {
   margin-left: 0rem;
 }
 
+.text-right-1{
+  text-align: right;
+
+}
+
+.text-left-1 {
+  text-align: left;
+
+}
+
+#icon-circle {
+  height: 12rem;
+  margin: 1rem 0rem 3rem 0rem;
+  padding: 2rem 2rem 2rem 0rem;
+
+}
+
+@media only screen and (max-width: 576px) {
+  #icon-circle {
+    margin-top: 1rem;
+    padding: 0rem;
+    width: 48rem;
+
+  }
+}
+
+.text-right-2{
+  text-align: right;
+}
+
+.text-left-2 {
+  text-align: left;
+  margin-top: 10rem;
+}
+
+.text-right-3{
+  text-align: right;
+  margin-top: 18rem;
+}
+
+.text-left-3 {
+  text-align: left;
+}
+
+
 /*continuouse-scroll*/
 
-.banner img {
-  width: 12rem;
-  padding: 2rem;
+#banner-container {
+ overflow: hidden;
+
+ background: white;
+}
+
+header {
+ width: 800px;
+ margin: 40px auto;
+}
+
+/*photobanner*/
+
+.photobanner {
+ height: 13rem;
+ width: 3550px;
+ margin-bottom: 80px;
+}
+
+.photobanner img {
+  width:350px;
+}
+
+
+/*keyframe animations*/
+.first {
+ -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+     -ms-animation: bannermove 30s linear infinite;
+      -o-animation: bannermove 30s linear infinite;
+         animation: bannermove 30s linear infinite;
+}
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
 
 }
 
-.banner > div {
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
 
-   transition: opacity 0.5s ease-out;
-   animation: moveSlideshow 60s linear infinite;
 }
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+
+}
+
 
 /*trading details*/
 
 .trading-details {
-  margin-top: 4rem;
+  margin-top: 1rem;
   margin-bottom: 6rem;
 }
 
@@ -588,8 +784,9 @@ hr {
 }
 
 ul {
-    list-style: square inside url("sqpurple.gif");
-    color: black;
+    list-style: square;
+    color: #2e2766;
+
 }
 
 /*what-is-to-come*/
@@ -676,10 +873,13 @@ ul {
     font-weight: normal;
 }
 
+#NHS-Supply-Chain {
+  padding: 2rem 0rem;
+}
 
-
-
-
+.mr-3 {
+  width: 10rem;
+}
 
 
 /* Form */
@@ -700,22 +900,6 @@ ul {
     width: 80%;
 }
 
-.ccfield-prepend {
-    margin-bottom: 10px;
-    width: 100%;
-    margin: 1em auto;
-}
-
-.ccform-addon {
-    color: #f8ae45;
-    float: left;
-    padding: 8px;
-    width: 8%;
-    background: #FFFFFF;
-    text-align: center;
-    margin: 1em auto;
-}
-
 .ccformfield {
     color: #000000;
     background: #FFFFFF;
@@ -723,14 +907,8 @@ ul {
     padding: 15.5px;
     width: 91.9%;
     display: block;
-    font-family: 'Lato', Arial, sans-serif;
     font-size: 14px;
-    margin: 2em auto;
-}
-
-.ccformfield {
-    font-family: 'Lato', Arial, sans-serif;
-    margin: auto;
+    margin: 1em auto;
 }
 
 .ccbtn {
@@ -745,7 +923,6 @@ ul {
     -webkit-border-radius: 7;
     -moz-border-radius: 7;
     border-radius: 7px;
-    font-family: Quicksand;
     font-weight: 400;
     margin: auto;
 }
@@ -754,26 +931,6 @@ ul {
     background: #ee2b60;
 
 }
-
-.credit {
-    width: 800px;
-    clear: both;
-    margin: 0 auto;
-    line-height: 25px;
-    padding: 25px 50px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.credit a {
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-
-
-
 
 /* Subscribe */
 

@@ -26,7 +26,29 @@ $('.your-class').slick({
          arrows: true,
          dots: true,
 
+         responsive: [
+
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+
+
+
+
   });
+
 
 
   $('.your-class-fullwidth').slick({
